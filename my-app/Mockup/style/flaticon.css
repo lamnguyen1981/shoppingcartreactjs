@@ -1,0 +1,308 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./fonts/flaticon.ttf?48e0cb1890e6daa5990802fdc856cc6d") format("truetype"),
+url("./fonts/flaticon.woff?48e0cb1890e6daa5990802fdc856cc6d") format("woff"),
+url("./fonts/flaticon.woff2?48e0cb1890e6daa5990802fdc856cc6d") format("woff2"),
+url("./fonts/flaticon.eot?48e0cb1890e6daa5990802fdc856cc6d#iefix") format("embedded-opentype"),
+url("./fonts/flaticon.svg?48e0cb1890e6daa5990802fdc856cc6d#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-shoes:before {
+    content: "\f101";
+}
+.flaticon-tie:before {
+    content: "\f102";
+}
+.flaticon-diamond:before {
+    content: "\f103";
+}
+.flaticon-high-heels:before {
+    content: "\f104";
+}
+.flaticon-pamela-hat:before {
+    content: "\f105";
+}
+.flaticon-hanger:before {
+    content: "\f106";
+}
+.flaticon-dress:before {
+    content: "\f107";
+}
+.flaticon-clothes-hanger:before {
+    content: "\f108";
+}
+.flaticon-fashion:before {
+    content: "\f109";
+}
+.flaticon-tshirt:before {
+    content: "\f10a";
+}
+.flaticon-hand-bag:before {
+    content: "\f10b";
+}
+.flaticon-cosmetics:before {
+    content: "\f10c";
+}
+.flaticon-glasses:before {
+    content: "\f10d";
+}
+.flaticon-earrings:before {
+    content: "\f10e";
+}
+.flaticon-skirt:before {
+    content: "\f10f";
+}
+.flaticon-sleeveless-shirt:before {
+    content: "\f110";
+}
+.flaticon-shorts:before {
+    content: "\f111";
+}
+.flaticon-purse:before {
+    content: "\f112";
+}
+.flaticon-make-up:before {
+    content: "\f113";
+}
+.flaticon-old-fashion-glasses:before {
+    content: "\f114";
+}
+.flaticon-jeans:before {
+    content: "\f115";
+}
+.flaticon-reading-glasses:before {
+    content: "\f116";
+}
+.flaticon-cocktail-dress:before {
+    content: "\f117";
+}
+.flaticon-blazer:before {
+    content: "\f118";
+}
+.flaticon-shorts-1:before {
+    content: "\f119";
+}
+.flaticon-skirt-1:before {
+    content: "\f11a";
+}
+.flaticon-cloth:before {
+    content: "\f11b";
+}
+.flaticon-tshirt-1:before {
+    content: "\f11c";
+}
+.flaticon-swimsuit:before {
+    content: "\f11d";
+}
+.flaticon-bikini:before {
+    content: "\f11e";
+}
+.flaticon-polo:before {
+    content: "\f11f";
+}
+.flaticon-sweater:before {
+    content: "\f120";
+}
+.flaticon-shirt:before {
+    content: "\f121";
+}
+.flaticon-pants:before {
+    content: "\f122";
+}
+.flaticon-safety-suit:before {
+    content: "\f123";
+}
+.flaticon-swimsuit-1:before {
+    content: "\f124";
+}
+.flaticon-swimsuit-2:before {
+    content: "\f125";
+}
+.flaticon-swimsuit-3:before {
+    content: "\f126";
+}
+.flaticon-sport-bra:before {
+    content: "\f127";
+}
+.flaticon-trousers:before {
+    content: "\f128";
+}
+.flaticon-bow-tie:before {
+    content: "\f129";
+}
+.flaticon-sport-bra-1:before {
+    content: "\f12a";
+}
+.flaticon-swimsuit-4:before {
+    content: "\f12b";
+}
+.flaticon-harvest:before {
+    content: "\f12c";
+}
+.flaticon-groceries:before {
+    content: "\f12d";
+}
+.flaticon-wine:before {
+    content: "\f12e";
+}
+.flaticon-wine-1:before {
+    content: "\f12f";
+}
+.flaticon-boiled:before {
+    content: "\f130";
+}
+.flaticon-fish:before {
+    content: "\f131";
+}
+.flaticon-delivery-bike:before {
+    content: "\f132";
+}
+.flaticon-delivery-bike-1:before {
+    content: "\f133";
+}
+.flaticon-healthy-food:before {
+    content: "\f134";
+}
+.flaticon-salad:before {
+    content: "\f135";
+}
+.flaticon-fish-1:before {
+    content: "\f136";
+}
+.flaticon-lettuce:before {
+    content: "\f137";
+}
+.flaticon-olive:before {
+    content: "\f138";
+}
+.flaticon-herb:before {
+    content: "\f139";
+}
+.flaticon-diet:before {
+    content: "\f13a";
+}
+.flaticon-oil:before {
+    content: "\f13b";
+}
+.flaticon-honey:before {
+    content: "\f13c";
+}
+.flaticon-body:before {
+    content: "\f13d";
+}
+.flaticon-exercise:before {
+    content: "\f13e";
+}
+.flaticon-healthy:before {
+    content: "\f13f";
+}
+.flaticon-heartbeat:before {
+    content: "\f140";
+}
+.flaticon-patient:before {
+    content: "\f141";
+}
+.flaticon-dumbbell:before {
+    content: "\f142";
+}
+.flaticon-healthy-1:before {
+    content: "\f143";
+}
+.flaticon-heart:before {
+    content: "\f144";
+}
+.flaticon-heart-rate:before {
+    content: "\f145";
+}
+.flaticon-healthy-2:before {
+    content: "\f146";
+}
+.flaticon-healthy-3:before {
+    content: "\f147";
+}
+.flaticon-yoga-pose:before {
+    content: "\f148";
+}
+.flaticon-cardiology:before {
+    content: "\f149";
+}
+.flaticon-lunges:before {
+    content: "\f14a";
+}
+.flaticon-vegetarian:before {
+    content: "\f14b";
+}
+.flaticon-heartbeat-1:before {
+    content: "\f14c";
+}
+.flaticon-clothes:before {
+    content: "\f14d";
+}
+.flaticon-clothes-1:before {
+    content: "\f14e";
+}
+.flaticon-tshirt-2:before {
+    content: "\f14f";
+}
+.flaticon-shirts:before {
+    content: "\f150";
+}
+.flaticon-shirt-1:before {
+    content: "\f151";
+}
+.flaticon-shirt-2:before {
+    content: "\f152";
+}
+.flaticon-uniform:before {
+    content: "\f153";
+}
+.flaticon-shirt-3:before {
+    content: "\f154";
+}
+.flaticon-fast-delivery:before {
+    content: "\f155";
+}
+.flaticon-money-back:before {
+    content: "\f156";
+}
+.flaticon-online-support:before {
+    content: "\f157";
+}
+.flaticon-online-support-1:before {
+    content: "\f158";
+}
+.flaticon-online-support-2:before {
+    content: "\f159";
+}
+.flaticon-hearts:before {
+    content: "\f15a";
+}
+.flaticon-heart-1:before {
+    content: "\f15b";
+}
+.flaticon-heart-2:before {
+    content: "\f15c";
+}
+.flaticon-message:before {
+    content: "\f15d";
+}
+.flaticon-user:before {
+    content: "\f15e";
+}
+.flaticon-heart-3:before {
+    content: "\f15f";
+}
+.flaticon-shopping-cart:before {
+    content: "\f160";
+}

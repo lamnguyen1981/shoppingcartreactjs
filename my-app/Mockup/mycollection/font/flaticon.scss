@@ -1,0 +1,65 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?fa1a16899eb55506c7a714c43cb774f0") format("truetype"),
+url("./flaticon.woff?fa1a16899eb55506c7a714c43cb774f0") format("woff"),
+url("./flaticon.woff2?fa1a16899eb55506c7a714c43cb774f0") format("woff2"),
+url("./flaticon.eot?fa1a16899eb55506c7a714c43cb774f0#iefix") format("embedded-opentype"),
+url("./flaticon.svg?fa1a16899eb55506c7a714c43cb774f0#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "shoes": "\f101",
+    "tie": "\f102",
+    "diamond": "\f103",
+    "high-heels": "\f104",
+    "pamela-hat": "\f105",
+    "hanger": "\f106",
+    "dress": "\f107",
+    "clothes-hanger": "\f108",
+    "fashion": "\f109",
+    "tshirt": "\f10a",
+);
+
+.flaticon-shoes:before {
+    content: map-get($flaticon-map, "shoes");
+}
+.flaticon-tie:before {
+    content: map-get($flaticon-map, "tie");
+}
+.flaticon-diamond:before {
+    content: map-get($flaticon-map, "diamond");
+}
+.flaticon-high-heels:before {
+    content: map-get($flaticon-map, "high-heels");
+}
+.flaticon-pamela-hat:before {
+    content: map-get($flaticon-map, "pamela-hat");
+}
+.flaticon-hanger:before {
+    content: map-get($flaticon-map, "hanger");
+}
+.flaticon-dress:before {
+    content: map-get($flaticon-map, "dress");
+}
+.flaticon-clothes-hanger:before {
+    content: map-get($flaticon-map, "clothes-hanger");
+}
+.flaticon-fashion:before {
+    content: map-get($flaticon-map, "fashion");
+}
+.flaticon-tshirt:before {
+    content: map-get($flaticon-map, "tshirt");
+}

@@ -1,0 +1,409 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?48e0cb1890e6daa5990802fdc856cc6d") format("truetype"),
+url("./flaticon.woff?48e0cb1890e6daa5990802fdc856cc6d") format("woff"),
+url("./flaticon.woff2?48e0cb1890e6daa5990802fdc856cc6d") format("woff2"),
+url("./flaticon.eot?48e0cb1890e6daa5990802fdc856cc6d#iefix") format("embedded-opentype"),
+url("./flaticon.svg?48e0cb1890e6daa5990802fdc856cc6d#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "shoes": "\f101",
+    "tie": "\f102",
+    "diamond": "\f103",
+    "high-heels": "\f104",
+    "pamela-hat": "\f105",
+    "hanger": "\f106",
+    "dress": "\f107",
+    "clothes-hanger": "\f108",
+    "fashion": "\f109",
+    "tshirt": "\f10a",
+    "hand-bag": "\f10b",
+    "cosmetics": "\f10c",
+    "glasses": "\f10d",
+    "earrings": "\f10e",
+    "skirt": "\f10f",
+    "sleeveless-shirt": "\f110",
+    "shorts": "\f111",
+    "purse": "\f112",
+    "make-up": "\f113",
+    "old-fashion-glasses": "\f114",
+    "jeans": "\f115",
+    "reading-glasses": "\f116",
+    "cocktail-dress": "\f117",
+    "blazer": "\f118",
+    "shorts-1": "\f119",
+    "skirt-1": "\f11a",
+    "cloth": "\f11b",
+    "tshirt-1": "\f11c",
+    "swimsuit": "\f11d",
+    "bikini": "\f11e",
+    "polo": "\f11f",
+    "sweater": "\f120",
+    "shirt": "\f121",
+    "pants": "\f122",
+    "safety-suit": "\f123",
+    "swimsuit-1": "\f124",
+    "swimsuit-2": "\f125",
+    "swimsuit-3": "\f126",
+    "sport-bra": "\f127",
+    "trousers": "\f128",
+    "bow-tie": "\f129",
+    "sport-bra-1": "\f12a",
+    "swimsuit-4": "\f12b",
+    "harvest": "\f12c",
+    "groceries": "\f12d",
+    "wine": "\f12e",
+    "wine-1": "\f12f",
+    "boiled": "\f130",
+    "fish": "\f131",
+    "delivery-bike": "\f132",
+    "delivery-bike-1": "\f133",
+    "healthy-food": "\f134",
+    "salad": "\f135",
+    "fish-1": "\f136",
+    "lettuce": "\f137",
+    "olive": "\f138",
+    "herb": "\f139",
+    "diet": "\f13a",
+    "oil": "\f13b",
+    "honey": "\f13c",
+    "body": "\f13d",
+    "exercise": "\f13e",
+    "healthy": "\f13f",
+    "heartbeat": "\f140",
+    "patient": "\f141",
+    "dumbbell": "\f142",
+    "healthy-1": "\f143",
+    "heart": "\f144",
+    "heart-rate": "\f145",
+    "healthy-2": "\f146",
+    "healthy-3": "\f147",
+    "yoga-pose": "\f148",
+    "cardiology": "\f149",
+    "lunges": "\f14a",
+    "vegetarian": "\f14b",
+    "heartbeat-1": "\f14c",
+    "clothes": "\f14d",
+    "clothes-1": "\f14e",
+    "tshirt-2": "\f14f",
+    "shirts": "\f150",
+    "shirt-1": "\f151",
+    "shirt-2": "\f152",
+    "uniform": "\f153",
+    "shirt-3": "\f154",
+    "fast-delivery": "\f155",
+    "money-back": "\f156",
+    "online-support": "\f157",
+    "online-support-1": "\f158",
+    "online-support-2": "\f159",
+    "hearts": "\f15a",
+    "heart-1": "\f15b",
+    "heart-2": "\f15c",
+    "message": "\f15d",
+    "user": "\f15e",
+    "heart-3": "\f15f",
+    "shopping-cart": "\f160",
+);
+
+.flaticon-shoes:before {
+    content: map-get($flaticon-map, "shoes");
+}
+.flaticon-tie:before {
+    content: map-get($flaticon-map, "tie");
+}
+.flaticon-diamond:before {
+    content: map-get($flaticon-map, "diamond");
+}
+.flaticon-high-heels:before {
+    content: map-get($flaticon-map, "high-heels");
+}
+.flaticon-pamela-hat:before {
+    content: map-get($flaticon-map, "pamela-hat");
+}
+.flaticon-hanger:before {
+    content: map-get($flaticon-map, "hanger");
+}
+.flaticon-dress:before {
+    content: map-get($flaticon-map, "dress");
+}
+.flaticon-clothes-hanger:before {
+    content: map-get($flaticon-map, "clothes-hanger");
+}
+.flaticon-fashion:before {
+    content: map-get($flaticon-map, "fashion");
+}
+.flaticon-tshirt:before {
+    content: map-get($flaticon-map, "tshirt");
+}
+.flaticon-hand-bag:before {
+    content: map-get($flaticon-map, "hand-bag");
+}
+.flaticon-cosmetics:before {
+    content: map-get($flaticon-map, "cosmetics");
+}
+.flaticon-glasses:before {
+    content: map-get($flaticon-map, "glasses");
+}
+.flaticon-earrings:before {
+    content: map-get($flaticon-map, "earrings");
+}
+.flaticon-skirt:before {
+    content: map-get($flaticon-map, "skirt");
+}
+.flaticon-sleeveless-shirt:before {
+    content: map-get($flaticon-map, "sleeveless-shirt");
+}
+.flaticon-shorts:before {
+    content: map-get($flaticon-map, "shorts");
+}
+.flaticon-purse:before {
+    content: map-get($flaticon-map, "purse");
+}
+.flaticon-make-up:before {
+    content: map-get($flaticon-map, "make-up");
+}
+.flaticon-old-fashion-glasses:before {
+    content: map-get($flaticon-map, "old-fashion-glasses");
+}
+.flaticon-jeans:before {
+    content: map-get($flaticon-map, "jeans");
+}
+.flaticon-reading-glasses:before {
+    content: map-get($flaticon-map, "reading-glasses");
+}
+.flaticon-cocktail-dress:before {
+    content: map-get($flaticon-map, "cocktail-dress");
+}
+.flaticon-blazer:before {
+    content: map-get($flaticon-map, "blazer");
+}
+.flaticon-shorts-1:before {
+    content: map-get($flaticon-map, "shorts-1");
+}
+.flaticon-skirt-1:before {
+    content: map-get($flaticon-map, "skirt-1");
+}
+.flaticon-cloth:before {
+    content: map-get($flaticon-map, "cloth");
+}
+.flaticon-tshirt-1:before {
+    content: map-get($flaticon-map, "tshirt-1");
+}
+.flaticon-swimsuit:before {
+    content: map-get($flaticon-map, "swimsuit");
+}
+.flaticon-bikini:before {
+    content: map-get($flaticon-map, "bikini");
+}
+.flaticon-polo:before {
+    content: map-get($flaticon-map, "polo");
+}
+.flaticon-sweater:before {
+    content: map-get($flaticon-map, "sweater");
+}
+.flaticon-shirt:before {
+    content: map-get($flaticon-map, "shirt");
+}
+.flaticon-pants:before {
+    content: map-get($flaticon-map, "pants");
+}
+.flaticon-safety-suit:before {
+    content: map-get($flaticon-map, "safety-suit");
+}
+.flaticon-swimsuit-1:before {
+    content: map-get($flaticon-map, "swimsuit-1");
+}
+.flaticon-swimsuit-2:before {
+    content: map-get($flaticon-map, "swimsuit-2");
+}
+.flaticon-swimsuit-3:before {
+    content: map-get($flaticon-map, "swimsuit-3");
+}
+.flaticon-sport-bra:before {
+    content: map-get($flaticon-map, "sport-bra");
+}
+.flaticon-trousers:before {
+    content: map-get($flaticon-map, "trousers");
+}
+.flaticon-bow-tie:before {
+    content: map-get($flaticon-map, "bow-tie");
+}
+.flaticon-sport-bra-1:before {
+    content: map-get($flaticon-map, "sport-bra-1");
+}
+.flaticon-swimsuit-4:before {
+    content: map-get($flaticon-map, "swimsuit-4");
+}
+.flaticon-harvest:before {
+    content: map-get($flaticon-map, "harvest");
+}
+.flaticon-groceries:before {
+    content: map-get($flaticon-map, "groceries");
+}
+.flaticon-wine:before {
+    content: map-get($flaticon-map, "wine");
+}
+.flaticon-wine-1:before {
+    content: map-get($flaticon-map, "wine-1");
+}
+.flaticon-boiled:before {
+    content: map-get($flaticon-map, "boiled");
+}
+.flaticon-fish:before {
+    content: map-get($flaticon-map, "fish");
+}
+.flaticon-delivery-bike:before {
+    content: map-get($flaticon-map, "delivery-bike");
+}
+.flaticon-delivery-bike-1:before {
+    content: map-get($flaticon-map, "delivery-bike-1");
+}
+.flaticon-healthy-food:before {
+    content: map-get($flaticon-map, "healthy-food");
+}
+.flaticon-salad:before {
+    content: map-get($flaticon-map, "salad");
+}
+.flaticon-fish-1:before {
+    content: map-get($flaticon-map, "fish-1");
+}
+.flaticon-lettuce:before {
+    content: map-get($flaticon-map, "lettuce");
+}
+.flaticon-olive:before {
+    content: map-get($flaticon-map, "olive");
+}
+.flaticon-herb:before {
+    content: map-get($flaticon-map, "herb");
+}
+.flaticon-diet:before {
+    content: map-get($flaticon-map, "diet");
+}
+.flaticon-oil:before {
+    content: map-get($flaticon-map, "oil");
+}
+.flaticon-honey:before {
+    content: map-get($flaticon-map, "honey");
+}
+.flaticon-body:before {
+    content: map-get($flaticon-map, "body");
+}
+.flaticon-exercise:before {
+    content: map-get($flaticon-map, "exercise");
+}
+.flaticon-healthy:before {
+    content: map-get($flaticon-map, "healthy");
+}
+.flaticon-heartbeat:before {
+    content: map-get($flaticon-map, "heartbeat");
+}
+.flaticon-patient:before {
+    content: map-get($flaticon-map, "patient");
+}
+.flaticon-dumbbell:before {
+    content: map-get($flaticon-map, "dumbbell");
+}
+.flaticon-healthy-1:before {
+    content: map-get($flaticon-map, "healthy-1");
+}
+.flaticon-heart:before {
+    content: map-get($flaticon-map, "heart");
+}
+.flaticon-heart-rate:before {
+    content: map-get($flaticon-map, "heart-rate");
+}
+.flaticon-healthy-2:before {
+    content: map-get($flaticon-map, "healthy-2");
+}
+.flaticon-healthy-3:before {
+    content: map-get($flaticon-map, "healthy-3");
+}
+.flaticon-yoga-pose:before {
+    content: map-get($flaticon-map, "yoga-pose");
+}
+.flaticon-cardiology:before {
+    content: map-get($flaticon-map, "cardiology");
+}
+.flaticon-lunges:before {
+    content: map-get($flaticon-map, "lunges");
+}
+.flaticon-vegetarian:before {
+    content: map-get($flaticon-map, "vegetarian");
+}
+.flaticon-heartbeat-1:before {
+    content: map-get($flaticon-map, "heartbeat-1");
+}
+.flaticon-clothes:before {
+    content: map-get($flaticon-map, "clothes");
+}
+.flaticon-clothes-1:before {
+    content: map-get($flaticon-map, "clothes-1");
+}
+.flaticon-tshirt-2:before {
+    content: map-get($flaticon-map, "tshirt-2");
+}
+.flaticon-shirts:before {
+    content: map-get($flaticon-map, "shirts");
+}
+.flaticon-shirt-1:before {
+    content: map-get($flaticon-map, "shirt-1");
+}
+.flaticon-shirt-2:before {
+    content: map-get($flaticon-map, "shirt-2");
+}
+.flaticon-uniform:before {
+    content: map-get($flaticon-map, "uniform");
+}
+.flaticon-shirt-3:before {
+    content: map-get($flaticon-map, "shirt-3");
+}
+.flaticon-fast-delivery:before {
+    content: map-get($flaticon-map, "fast-delivery");
+}
+.flaticon-money-back:before {
+    content: map-get($flaticon-map, "money-back");
+}
+.flaticon-online-support:before {
+    content: map-get($flaticon-map, "online-support");
+}
+.flaticon-online-support-1:before {
+    content: map-get($flaticon-map, "online-support-1");
+}
+.flaticon-online-support-2:before {
+    content: map-get($flaticon-map, "online-support-2");
+}
+.flaticon-hearts:before {
+    content: map-get($flaticon-map, "hearts");
+}
+.flaticon-heart-1:before {
+    content: map-get($flaticon-map, "heart-1");
+}
+.flaticon-heart-2:before {
+    content: map-get($flaticon-map, "heart-2");
+}
+.flaticon-message:before {
+    content: map-get($flaticon-map, "message");
+}
+.flaticon-user:before {
+    content: map-get($flaticon-map, "user");
+}
+.flaticon-heart-3:before {
+    content: map-get($flaticon-map, "heart-3");
+}
+.flaticon-shopping-cart:before {
+    content: map-get($flaticon-map, "shopping-cart");
+}

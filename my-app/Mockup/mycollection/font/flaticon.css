@@ -1,0 +1,43 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "flaticon";
+  src: url("./flaticon.ttf?fa1a16899eb55506c7a714c43cb774f0") format("truetype"), url("./flaticon.woff?fa1a16899eb55506c7a714c43cb774f0") format("woff"), url("./flaticon.woff2?fa1a16899eb55506c7a714c43cb774f0") format("woff2"), url("./flaticon.eot?fa1a16899eb55506c7a714c43cb774f0#iefix") format("embedded-opentype"), url("./flaticon.svg?fa1a16899eb55506c7a714c43cb774f0#flaticon") format("svg"); }
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+  font-family: flaticon !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.flaticon-shoes:before {
+  content: ""; }
+
+.flaticon-tie:before {
+  content: ""; }
+
+.flaticon-diamond:before {
+  content: ""; }
+
+.flaticon-high-heels:before {
+  content: ""; }
+
+.flaticon-pamela-hat:before {
+  content: ""; }
+
+.flaticon-hanger:before {
+  content: ""; }
+
+.flaticon-dress:before {
+  content: ""; }
+
+.flaticon-clothes-hanger:before {
+  content: ""; }
+
+.flaticon-fashion:before {
+  content: ""; }
+
+.flaticon-tshirt:before {
+  content: ""; }

@@ -1,0 +1,265 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "flaticon";
+  src: url("./flaticon.ttf?2a928b6aba9628045baa864db91826d3") format("truetype"), url("./flaticon.woff?2a928b6aba9628045baa864db91826d3") format("woff"), url("./flaticon.woff2?2a928b6aba9628045baa864db91826d3") format("woff2"), url("./flaticon.eot?2a928b6aba9628045baa864db91826d3#iefix") format("embedded-opentype"), url("./flaticon.svg?2a928b6aba9628045baa864db91826d3#flaticon") format("svg"); }
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+  font-family: flaticon !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.flaticon-shoes:before {
+  content: ""; }
+
+.flaticon-tie:before {
+  content: ""; }
+
+.flaticon-diamond:before {
+  content: ""; }
+
+.flaticon-high-heels:before {
+  content: ""; }
+
+.flaticon-pamela-hat:before {
+  content: ""; }
+
+.flaticon-hanger:before {
+  content: ""; }
+
+.flaticon-dress:before {
+  content: ""; }
+
+.flaticon-clothes-hanger:before {
+  content: ""; }
+
+.flaticon-fashion:before {
+  content: ""; }
+
+.flaticon-tshirt:before {
+  content: ""; }
+
+.flaticon-hand-bag:before {
+  content: ""; }
+
+.flaticon-cosmetics:before {
+  content: ""; }
+
+.flaticon-glasses:before {
+  content: ""; }
+
+.flaticon-earrings:before {
+  content: ""; }
+
+.flaticon-skirt:before {
+  content: ""; }
+
+.flaticon-sleeveless-shirt:before {
+  content: ""; }
+
+.flaticon-shorts:before {
+  content: ""; }
+
+.flaticon-purse:before {
+  content: ""; }
+
+.flaticon-make-up:before {
+  content: ""; }
+
+.flaticon-old-fashion-glasses:before {
+  content: ""; }
+
+.flaticon-jeans:before {
+  content: ""; }
+
+.flaticon-reading-glasses:before {
+  content: ""; }
+
+.flaticon-cocktail-dress:before {
+  content: ""; }
+
+.flaticon-blazer:before {
+  content: ""; }
+
+.flaticon-shorts-1:before {
+  content: ""; }
+
+.flaticon-skirt-1:before {
+  content: ""; }
+
+.flaticon-cloth:before {
+  content: ""; }
+
+.flaticon-tshirt-1:before {
+  content: ""; }
+
+.flaticon-swimsuit:before {
+  content: ""; }
+
+.flaticon-bikini:before {
+  content: ""; }
+
+.flaticon-polo:before {
+  content: ""; }
+
+.flaticon-sweater:before {
+  content: ""; }
+
+.flaticon-shirt:before {
+  content: ""; }
+
+.flaticon-pants:before {
+  content: ""; }
+
+.flaticon-safety-suit:before {
+  content: ""; }
+
+.flaticon-swimsuit-1:before {
+  content: ""; }
+
+.flaticon-swimsuit-2:before {
+  content: ""; }
+
+.flaticon-swimsuit-3:before {
+  content: ""; }
+
+.flaticon-sport-bra:before {
+  content: ""; }
+
+.flaticon-trousers:before {
+  content: ""; }
+
+.flaticon-bow-tie:before {
+  content: ""; }
+
+.flaticon-sport-bra-1:before {
+  content: ""; }
+
+.flaticon-swimsuit-4:before {
+  content: ""; }
+
+.flaticon-harvest:before {
+  content: ""; }
+
+.flaticon-groceries:before {
+  content: ""; }
+
+.flaticon-wine:before {
+  content: ""; }
+
+.flaticon-wine-1:before {
+  content: ""; }
+
+.flaticon-boiled:before {
+  content: ""; }
+
+.flaticon-fish:before {
+  content: ""; }
+
+.flaticon-delivery-bike:before {
+  content: ""; }
+
+.flaticon-delivery-bike-1:before {
+  content: ""; }
+
+.flaticon-healthy-food:before {
+  content: ""; }
+
+.flaticon-salad:before {
+  content: ""; }
+
+.flaticon-fish-1:before {
+  content: ""; }
+
+.flaticon-lettuce:before {
+  content: ""; }
+
+.flaticon-olive:before {
+  content: ""; }
+
+.flaticon-herb:before {
+  content: ""; }
+
+.flaticon-diet:before {
+  content: ""; }
+
+.flaticon-oil:before {
+  content: ""; }
+
+.flaticon-honey:before {
+  content: ""; }
+
+.flaticon-body:before {
+  content: ""; }
+
+.flaticon-exercise:before {
+  content: ""; }
+
+.flaticon-healthy:before {
+  content: ""; }
+
+.flaticon-heartbeat:before {
+  content: ""; }
+
+.flaticon-patient:before {
+  content: ""; }
+
+.flaticon-dumbbell:before {
+  content: ""; }
+
+.flaticon-healthy-1:before {
+  content: ""; }
+
+.flaticon-heart:before {
+  content: ""; }
+
+.flaticon-heart-rate:before {
+  content: ""; }
+
+.flaticon-healthy-2:before {
+  content: ""; }
+
+.flaticon-healthy-3:before {
+  content: ""; }
+
+.flaticon-yoga-pose:before {
+  content: ""; }
+
+.flaticon-cardiology:before {
+  content: ""; }
+
+.flaticon-lunges:before {
+  content: ""; }
+
+.flaticon-vegetarian:before {
+  content: ""; }
+
+.flaticon-heartbeat-1:before {
+  content: ""; }
+
+.flaticon-clothes:before {
+  content: ""; }
+
+.flaticon-clothes-1:before {
+  content: ""; }
+
+.flaticon-tshirt-2:before {
+  content: ""; }
+
+.flaticon-shirts:before {
+  content: ""; }
+
+.flaticon-shirt-1:before {
+  content: ""; }
+
+.flaticon-shirt-2:before {
+  content: ""; }
+
+.flaticon-uniform:before {
+  content: ""; }
+
+.flaticon-shirt-3:before {
+  content: ""; }

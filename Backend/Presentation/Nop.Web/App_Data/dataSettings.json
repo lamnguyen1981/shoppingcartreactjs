@@ -1,0 +1,6 @@
+﻿{
+  "DataConnectionString": "server=localhost;database=shoppingweb;allowuservariables=True;user id=root;password=saobien1981",
+  "DataProvider": "mysql",
+  "SQLCommandTimeout": null,
+  "RawDataSettings": {}
+}

@@ -1,0 +1,892 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style/Style.css" rel="stylesheet" type="text/css">
+    <link href="style/linearicons.css" rel="stylesheet" type="text/css">
+    <link href="style/flaticon.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="style/scripts/main.js"></script>
+    <link href="style/owlcarousel/owl.carousel.min.css" rel="stylesheet" type="text/css">
+    <link href="style/owlcarousel/owl.theme.default.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="style/owlcarousel/owl.carousel.min.js"></script>
+
+    <title>Home</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        function carousel_slider() {
+            $('.carousel_slider').each(function () {
+                var $carousel = $(this);
+                $carousel.owlCarousel({
+                    dots: $carousel.data("dots"),
+                    loop: $carousel.data("loop"),
+                    items: $carousel.data("items"),
+                    margin: $carousel.data("margin"),
+                    mouseDrag: $carousel.data("mouse-drag"),
+                    touchDrag: $carousel.data("touch-drag"),
+                    autoHeight: $carousel.data("autoheight"),
+                    center: $carousel.data("center"),
+                    nav: $carousel.data("nav"),
+                    rewind: $carousel.data("rewind"),
+                    navText: ['<i class="ion-ios-arrow-left"></i>', '<i class="ion-ios-arrow-right"></i>'],
+                    autoplay: $carousel.data("autoplay"),
+                    animateIn: $carousel.data("animate-in"),
+                    animateOut: $carousel.data("animate-out"),
+                    autoplayTimeout: $carousel.data("autoplay-timeout"),
+                    smartSpeed: $carousel.data("smart-speed"),
+                    responsive: $carousel.data("responsive")
+                });
+            });
+        }
+
+        function slick_slider() {
+            $('.slick_slider').each(function () {
+                var $slick_carousel = $(this);
+                $slick_carousel.slick({
+                    arrows: $slick_carousel.data("arrows"),
+                    dots: $slick_carousel.data("dots"),
+                    infinite: $slick_carousel.data("infinite"),
+                    centerMode: $slick_carousel.data("center-mode"),
+                    vertical: $slick_carousel.data("vertical"),
+                    fade: $slick_carousel.data("fade"),
+                    cssEase: $slick_carousel.data("css-ease"),
+                    autoplay: $slick_carousel.data("autoplay"),
+                    verticalSwiping: $slick_carousel.data("vertical-swiping"),
+                    autoplaySpeed: $slick_carousel.data("autoplay-speed"),
+                    speed: $slick_carousel.data("speed"),
+                    pauseOnHover: $slick_carousel.data("pause-on-hover"),
+                    draggable: $slick_carousel.data("draggable"),
+                    slidesToShow: $slick_carousel.data("slides-to-show"),
+                    slidesToScroll: $slick_carousel.data("slides-to-scroll"),
+                    asNavFor: $slick_carousel.data("as-nav-for"),
+                    focusOnSelect: $slick_carousel.data("focus-on-select"),
+                    responsive: $slick_carousel.data("responsive")
+                });
+            });
+        }
+
+
+        $(document).ready(function () {
+            // carousel_slider();
+            // slick_slider();
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+
+            /////// Prevent closing from click inside dropdown
+            /*document.querySelectorAll('.dropdown-menu').forEach(function(element){
+                element.addEventListener('click', function (e) {
+
+                  e.stopPropagation();
+                });
+            })*/
+
+
+
+            // make it as accordion for smaller screens
+            if (window.innerWidth < 992) {
+
+                // close all inner dropdowns when parent is closed
+                document.querySelectorAll('.navbar .dropdown').forEach(function (everydropdown) {
+                    everydropdown.addEventListener('hidden.bs.dropdown', function () {
+                        // after dropdown is hidden, then find all submenus
+                        this.querySelectorAll('.submenu').forEach(function (everysubmenu) {
+                            // hide every submenu as well
+                            everysubmenu.style.display = 'none';
+                        });
+                    })
+                });
+
+                document.querySelectorAll('.dropdown-menu a').forEach(function (element) {
+                    element.addEventListener('click', function (e) {
+                        debugger;
+                        alert('lam1');
+                        let nextEl = this.nextElementSibling;
+                        if (nextEl && nextEl.classList.contains('submenu')) {
+                            // prevent opening link if link needs to open dropdown
+                            e.preventDefault();
+                            console.log(nextEl);
+                            if (nextEl.style.display == 'block') {
+                                nextEl.style.display = 'none';
+                            } else {
+                                nextEl.style.display = 'block';
+                            }
+
+
+                        }
+                    });
+                })
+
+
+            }
+            // end if innerWidth
+
+        });
+    </script>
+
+    <main>
+
+        <div class="container p-2">
+            <div class="  row  m-3 text-balck">
+                <div class="col-3 align-items mx-auto"> <a href="#"> <img src="style/images/logo_dark.png" width="182" height="47" alt="" /> </a> </div>
+                <div class=" col-6">
+                    <form>
+                        <div class="input-group  input-group-lg">
+                            <select class="form-select rounded-start  w-5">
+                                <option selected>All Catagory</option>
+
+
+
+                                borde
+
+
+
+
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <input type="text" class="form-control">
+                            <button type="button" c
+                    </form>
+                </div>lass="btn input-group-text "> <span class="fa fa-search"></span> </button>
+                        </div>
+                <div class=" col-3 align-middle ">
+                    <div class="d-flex align-items-center float-right">
+                        <div class="flex-shrink-0 "> <img src="style/images/—Pngtree—red phone icon_5054285.png" width="50" height="50" alt="" /> </div>
+                        <div class="flex-grow-1 ms-3 "> 0984954490 </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_header light_skin main_menu_uppercase bg_dark mb-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="dropdown">
+                            <button class="dropbtn "> <i class="lnr lnr-menu"></i> <span>Danh Mục</span> </button>
+                            <div class="dropdown-content">
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display: block; position: static; margin-bottom: 5px; *width: 180px; padding-top: 0px; border: none">
+                                    <li class="dropdown-submenu">
+
+                                        <a href="#" class="dropdown-item">
+                                            <div class="d-flex ">
+                                                <i class="flaticon-dress">&nbsp;</i>
+                                                <div class="pl-5">Thoi Trang nu</div>
+                                                <div class="ms-auto">></div>
+                                            </div>
+                                        </a>
+                                        <ul class="submenu  dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Multi level 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Multi level 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" class="dropdown-toggle1"><i class="flaticon-dress"></i> <span>Thời Trang nữ</span></a></li>
+                                    <li><a href="#"><i class="flaticon-polo"></i> <span>Thời Trang Nam</span></a> </li>
+                                    <li><a href="#"><i class="flaticon-healthy-1"></i> <span>Trẻ em </span> </a> </li>
+                                    <li> <a href="#"><i class="flaticon-bow-tie"></i> <span>Phụ Kiện</span> </a> </li>
+                                    <li> <a href="#"><i class="flaticon-earrings"></i> <span>Trang sức</span> </a> </li>
+                                    <li><a href="#"><i class="flaticon-cosmetics"></i> <span>Mỹ Phẩm</span> </a> </li>
+                                    <li><a href="#"><i class="flaticon-healthy-3"></i> <span>Sức Khỏe</span> </a> </li>
+                                    <li><a href="#"><i class="flaticon-groceries"></i> <span>Thực Phẩm</span> </a> </li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <nav class="navbar navbar-expand-lg">
+                            <button class="navbar-toggler side_navbar_toggler" type="button" data-toggle="collapse" data-target="#navbarSidetoggle" aria-expanded="false">
+                                <span class="ion-android-menu"></span>
+                            </button>
+                            <div class="collapse navbar-collapse mobile_side_menu" id="navbarSidetoggle">
+
+                                <ul class="navbar-nav">
+                                    <li class="dropdown">
+                                        <a data-toggle="dropdown" class="nav-link  active" href="#">Trang Chủ</a>
+
+                                    </li>
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Tiện ích</a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+                                            <ul>
+                                                <li><a class="dropdown-item nav-link nav_item" href="about.html">Đồ secondhand</a></li>
+                                                <li><a class="dropdown-item nav-link nav_item" href="contact.html">Trao đổi đồ</a></li>
+                                                <li><a class="dropdown-item nav-link nav_item" href="faq.html">Góp ý</a></li>
+                                                <li><a class="dropdown-item nav-link nav_item" href="login.html">Đăng nhập</a></li>
+                                                <li><a class="dropdown-item nav-link nav_item" href="signup.html">Đăng Ký</a></li>
+                                                <li><a class="dropdown-item nav-link nav_item" href="term-condition.html">Trang cá nhân</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Blog</a>
+                                        <div class="dropdown-menu dropdown-reverse">
+                                            <ul>
+                                                <li>
+                                                    <a class="dropdown-item menu-link dropdown-toggler" href="#">Grids</a>
+                                                    <div class="dropdown-menu">
+                                                        <ul>
+                                                            <li><a class="dropdown-item nav-link nav_item" href="blog-three-columns.html">3 columns</a></li>
+                                                            <li><a class="dropdown-item nav-link nav_item" href="blog-four-columns.html">4 columns</a></li>
+                                                            <li><a class="dropdown-item nav-link nav_item" href="blog-left-sidebar.html">Left Sidebar</a></li>
+                                                            <li><a class="dropdown-item nav-link nav_item" href="blog-right-sidebar.html">right Sidebar</a></li>
+                                                            <li><a class="dropdown-item nav-link nav_item" href="blog-standard-left-sidebar.html">Standard Left Sidebar</a></li>
+                                                            <li><a class="dropdown-item nav-link nav_item" href="blog-standard-right-sidebar.html">Standard right Sidebar</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item menu-link dropdown-toggler" href="#">Masonry</a>
+                                                    <div class="dropdown-menu">
+                                                        <ul>
+                                                            <li><a class="dropdown-item nav-link nav_item" href="blog-masonry-three-columns.html">3 columns</a></li>
+                                                            <li><a class="dropdown-item nav-link nav_item" href="blog-masonry-four-columns.html">4 columns</a></li>
+                                                            <li><a class="dropdown-item nav-link nav_item" href="blog-masonry-left-sidebar.html">Left Sidebar</a></li>
+                                                            <li><a class="dropdown-item nav-link nav_item" href="blog-masonry-right-sidebar.html">right Sidebar</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item menu-link dropdown-toggler" href="#">Single Post</a>
+                                                    <div class="dropdown-menu">
+                                                        <ul>
+                                                            <li><a class="dropdown-item nav-link nav_item" href="blog-single.html">Default</a></li>
+                                                            <li><a class="dropdown-item nav-link nav_item" href="blog-single-left-sidebar.html">left sidebar</a></li>
+                                                            <li><a class="dropdown-item nav-link nav_item" href="blog-single-slider.html">slider post</a></li>
+                                                            <li><a class="dropdown-item nav-link nav_item" href="blog-single-video.html">video post</a></li>
+                                                            <li><a class="dropdown-item nav-link nav_item" href="blog-single-audio.html">audio post</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item menu-link dropdown-toggler" href="#">List</a>
+                                                    <div class="dropdown-menu">
+                                                        <ul>
+                                                            <li><a class="dropdown-item nav-link nav_item" href="blog-list-left-sidebar.html">left sidebar</a></li>
+                                                            <li><a class="dropdown-item nav-link nav_item" href="blog-list-right-sidebar.html">right sidebar</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li><a class="nav-link nav_item" href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                            <ul class="navbar-nav attr-nav align-items-center">
+                                <li><a href="#" class="nav-link"><i class="linearicons-user"></i></a></li>
+                                <li><a href="#" class="nav-link"><i class="linearicons-heart"></i><span class="wishlist_count">0</span></a></li>
+                                <li class="dropdown cart_dropdown">
+                                    <a class="nav-link cart_trigger" href="#" data-toggle="dropdown"><i class="linearicons-cart"></i><span class="cart_count">2</span></a>
+                                    <div class="cart_box dropdown-menu dropdown-menu-right">
+
+                                        <ul class="cart_list">
+                                            <li>
+                                                <a href="#" class="item_remove"><i class="ion-close"></i></a>
+                                                <a href="#"><img src="assets/images/cart_thamb1.jpg" alt="cart_thumb1">Variable product 001</a>
+                                                <span class="cart_quantity"> 1 x <span class="cart_amount"> <span class="price_symbole">$</span></span>78.00</span>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="item_remove"><i class="ion-close"></i></a>
+                                                <a href="#"><img src="assets/images/cart_thamb2.jpg" alt="cart_thumb2">Ornare sed consequat</a>
+                                                <span class="cart_quantity"> 1 x <span class="cart_amount"> <span class="price_symbole">$</span></span>81.00</span>
+                                            </li>
+                                        </ul>
+                                        <div class="cart_footer">
+                                            <p class="cart_total"><strong>Subtotal:</strong> <span class="cart_price"> <span class="price_symbole">$</span></span>159.00</p>
+                                            <p class="cart_buttons"><a href="#" class="btn btn-fill-line view-cart">View Cart</a><a href="#" class="btn btn-fill-out checkout">Checkout</a></p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="pr_search_icon">
+                                <a href="javascript:void(0);" class="nav-link pr_search_trigger"><i class="linearicons-magnifier"></i></a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="breadcrumb_section bg_gray page-title-mini">
+            <div class="container">
+                <!-- STRART CONTAINER -->
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="page-title">
+                            <h1>Shopping Cart</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <ol class="breadcrumb justify-content-md-end">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                            <li class="breadcrumb-item active">Shopping Cart</li>
+                        </ol>
+                    </div>
+                </div>
+            </div><!-- END CONTAINER-->
+        </div>
+
+        
+            <div class="container">
+                <div class="subcategory_header">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="">
+                                <div class="row align-items-center">
+
+                                    <div class="col-lg-12 col-md-8">
+                                        <div class="subcategory_container">
+                                            <div class="categories_box">
+                                                <a href="#">
+
+                                                    <span>Sofa</span>
+                                                </a>
+                                            </div>
+                                            <div class="categories_box">
+                                                <a href="#">
+
+                                                    <span>Sofa</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </div>
+        <div class="product_detail">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row align-items-center mb-4 pb-1">
+                            <div class="col-12">
+                                <div class="product_header">
+                                    <div class="product_header_left">
+                                        <div class="custom_select">
+                                            <select class="form-control form-control-sm">
+                                                <option value="order">Default sorting</option>
+                                                <option value="popularity">Sort by popularity</option>
+                                                <option value="date">Sort by newness</option>
+                                                <option value="price">Sort by price: low to high</option>
+                                                <option value="price-desc">Sort by price: high to low</option>
+                                            </select>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="product_header_right">
+
+                                        <div class="custom_select">
+                                            <select class="form-control form-control-sm first_null not_chosen">
+                                                <option value="">Showing</option>
+                                                <option value="9">9</option>
+                                                <option value="12">12</option>
+                                                <option value="18">18</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row shop_container grid">
+                            <div class="col-md-4 col-6">
+                                <div class="product">
+                                    <div class="product_img">
+                                        <a href="shop-product-detail.html">
+                                            <img src="./style/images/5ee73a442e1e5380f4abf129_9876.png" alt="product_img1">
+                                        </a>
+                                        <div class="product_action_box">
+                                            <ul class="list_none pr_action_btn">
+                                                <li class="add-to-cart"><a href="#"><i class="flaticon-shopping-cart"></i> Add To Cart</a></li>
+                                                <li><a href="shop-quick-view.html" class="popup-ajax"><i class="flaticon-heart-3"></i></a></li>
+                                                <li><a href="#"><i class="flaticon-heart-3"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="product_info">
+                                        <h6 class="product_title"><a href="shop-product-detail.html">Blue Dress For Woman</a></h6>
+                                        <div class="product_price">
+                                            <span class="price">$45.00</span>
+                                            <del>$55.25</del>
+                                            <div class="on_sale">
+                                                <span>35% Off</span>
+                                            </div>
+                                        </div>
+                                        <div class="rating_wrap">
+                                            <div class="rating">
+                                                <div class="product_rate" style="width:80%"></div>
+                                            </div>
+                                            <span class="rating_num">(21)</span>
+                                        </div>
+                                        <div class="pr_desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                        </div>
+                                        <div class="pr_switch_wrap">
+                                            <div class="product_color_switch">
+                                                <span class="active" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span>
+                                                <span data-color="#333333" style="background-color: rgb(51, 51, 51);"></span>
+                                                <span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span>
+                                            </div>
+                                        </div>
+                                        <div class="list_product_action_box">
+                                            <ul class="list_none pr_action_btn">
+                                                <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
+                                                <li><a href="shop-compare.html" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
+                                                <li><a href="shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                                <li><a href="#"><i class="icon-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-6">
+                                <div class="product">
+                                    <div class="product_img">
+                                        <a href="shop-product-detail.html">
+                                            <img src="./style/images/5ee9ed9ee80f4e41ca7074e6_9739.png" alt="product_img2">
+                                        </a>
+                                        <div class="product_action_box">
+                                            <ul class="list_none pr_action_btn">
+                                                <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
+                                                <li><a href="shop-compare.html" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
+                                                <li><a href="shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                                <li><a href="#"><i class="icon-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="product_info">
+                                        <h6 class="product_title"><a href="shop-product-detail.html">Lether Gray Tuxedo</a></h6>
+                                        <div class="product_price">
+                                            <span class="price">$55.00</span>
+                                            <del>$95.00</del>
+                                            <div class="on_sale">
+                                                <span>25% Off</span>
+                                            </div>
+                                        </div>
+                                        <div class="rating_wrap">
+                                            <div class="rating">
+                                                <div class="product_rate" style="width:68%"></div>
+                                            </div>
+                                            <span class="rating_num">(15)</span>
+                                        </div>
+                                        <div class="pr_desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                        </div>
+                                        <div class="pr_switch_wrap">
+                                            <div class="product_color_switch">
+                                                <span class="active" data-color="#847764" style="background-color: rgb(132, 119, 100);"></span>
+                                                <span data-color="#0393B5" style="background-color: rgb(3, 147, 181);"></span>
+                                                <span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span>
+                                            </div>
+                                        </div>
+                                        <div class="list_product_action_box">
+                                            <ul class="list_none pr_action_btn">
+                                                <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
+                                                <li><a href="shop-compare.html" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
+                                                <li><a href="shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                                <li><a href="#"><i class="icon-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-6">
+                                <div class="product">
+                                    <span class="pr_flash">New</span>
+                                    <div class="product_img">
+                                        <a href="shop-product-detail.html">
+                                            <img src="./style/images/6018fe63664b076ffd674a42_10604.png" alt="product_img3">
+                                        </a>
+                                        <div class="product_action_box">
+                                            <ul class="list_none pr_action_btn">
+                                                <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
+                                                <li><a href="shop-compare.html" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
+                                                <li><a href="shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                                <li><a href="#"><i class="icon-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="product_info">
+                                        <h6 class="product_title"><a href="shop-product-detail.html">woman full sliv dress</a></h6>
+                                        <div class="product_price">
+                                            <span class="price">$68.00</span>
+                                            <del>$99.00</del>
+                                        </div>
+                                        <div class="rating_wrap">
+                                            <div class="rating">
+                                                <div class="product_rate" style="width:87%"></div>
+                                            </div>
+                                            <span class="rating_num">(25)</span>
+                                        </div>
+                                        <div class="pr_desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                        </div>
+                                        <div class="pr_switch_wrap">
+                                            <div class="product_color_switch">
+                                                <span class="active" data-color="#333333" style="background-color: rgb(51, 51, 51);"></span>
+                                                <span data-color="#7C502F" style="background-color: rgb(124, 80, 47);"></span>
+                                                <span data-color="#2F366C" style="background-color: rgb(47, 54, 108);"></span>
+                                                <span data-color="#874A3D" style="background-color: rgb(135, 74, 61);"></span>
+                                            </div>
+                                        </div>
+                                        <div class="list_product_action_box">
+                                            <ul class="list_none pr_action_btn">
+                                                <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
+                                                <li><a href="shop-compare.html" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
+                                                <li><a href="shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                                <li><a href="#"><i class="icon-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-6">
+                                <div class="product">
+                                    <div class="product_img">
+                                        <a href="shop-product-detail.html">
+                                            <img src="./style/images/60658ebe2314dc9682462058_11601.png" alt="product_img4">
+                                        </a>
+                                        <div class="product_action_box">
+                                            <ul class="list_none pr_action_btn">
+                                                <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
+                                                <li><a href="shop-compare.html" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
+                                                <li><a href="shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                                <li><a href="#"><i class="icon-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="product_info">
+                                        <h6 class="product_title"><a href="shop-product-detail.html">light blue Shirt</a></h6>
+                                        <div class="product_price">
+                                            <span class="price">$69.00</span>
+                                            <del>$89.00</del>
+                                            <div class="on_sale">
+                                                <span>20% Off</span>
+                                            </div>
+                                        </div>
+                                        <div class="rating_wrap">
+                                            <div class="rating">
+                                                <div class="product_rate" style="width:70%"></div>
+                                            </div>
+                                            <span class="rating_num">(22)</span>
+                                        </div>
+                                        <div class="pr_desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                        </div>
+                                        <div class="pr_switch_wrap">
+                                            <div class="product_color_switch">
+                                                <span class="active" data-color="#333333" style="background-color: rgb(51, 51, 51);"></span>
+                                                <span data-color="#A92534" style="background-color: rgb(169, 37, 52);"></span>
+                                                <span data-color="#B9C2DF" style="background-color: rgb(185, 194, 223);"></span>
+                                            </div>
+                                        </div>
+                                        <div class="list_product_action_box">
+                                            <ul class="list_none pr_action_btn">
+                                                <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
+                                                <li><a href="shop-compare.html" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
+                                                <li><a href="shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                                <li><a href="#"><i class="icon-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-6">
+                                <div class="product">
+                                    <div class="product_img">
+                                        <a href="shop-product-detail.html">
+                                            <img src="./style/images/60efdb4fe30e25822bf1b29b_11722.png" alt="product_img5">
+                                        </a>
+                                        <div class="product_action_box">
+                                            <ul class="list_none pr_action_btn">
+                                                <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
+                                                <li><a href="shop-compare.html" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
+                                                <li><a href="shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                                <li><a href="#"><i class="icon-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="product_info">
+                                        <h6 class="product_title"><a href="shop-product-detail.html">blue dress for woman</a></h6>
+                                        <div class="product_price">
+                                            <span class="price">$45.00</span>
+                                            <del>$55.25</del>
+                                            <div class="on_sale">
+                                                <span>35% Off</span>
+                                            </div>
+                                        </div>
+                                        <div class="rating_wrap">
+                                            <div class="rating">
+                                                <div class="product_rate" style="width:80%"></div>
+                                            </div>
+                                            <span class="rating_num">(21)</span>
+                                        </div>
+                                        <div class="pr_desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                        </div>
+                                        <div class="pr_switch_wrap">
+                                            <div class="product_color_switch">
+                                                <span class="active" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span>
+                                                <span data-color="#333333" style="background-color: rgb(51, 51, 51);"></span>
+                                                <span data-color="#5FB7D4" style="background-color: rgb(95, 183, 212);"></span>
+                                            </div>
+                                        </div>
+                                        <div class="list_product_action_box">
+                                            <ul class="list_none pr_action_btn">
+                                                <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
+                                                <li><a href="shop-compare.html" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
+                                                <li><a href="shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                                <li><a href="#"><i class="icon-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-6">
+                                <div class="product">
+                                    <span class="pr_flash bg-danger">Hot</span>
+                                    <div class="product_img">
+                                        <a href="shop-product-detail.html">
+                                            <img src="./style/images/610cd8a9a01037902551c367_12324.png" alt="product_img6">
+                                        </a>
+                                        <div class="product_action_box">
+                                            <ul class="list_none pr_action_btn">
+                                                <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
+                                                <li><a href="shop-compare.html" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
+                                                <li><a href="shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                                <li><a href="#"><i class="icon-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="product_info">
+                                        <h6 class="product_title"><a href="shop-product-detail.html">Blue casual check shirt</a></h6>
+                                        <div class="product_price">
+                                            <span class="price">$55.00</span>
+                                            <del>$95.00</del>
+                                            <div class="on_sale">
+                                                <span>25% Off</span>
+                                            </div>
+                                        </div>
+                                        <div class="rating_wrap">
+                                            <div class="rating">
+                                                <div class="product_rate" style="width:68%"></div>
+                                            </div>
+                                            <span class="rating_num">(15)</span>
+                                        </div>
+                                        <div class="pr_desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                        </div>
+                                        <div class="pr_switch_wrap">
+                                            <div class="product_color_switch">
+                                                <span class="active" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span>
+                                                <span data-color="#333333" style="background-color: rgb(51, 51, 51);"></span>
+                                            </div>
+                                        </div>
+                                        <div class="list_product_action_box">
+                                            <ul class="list_none pr_action_btn">
+                                                <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
+                                                <li><a href="shop-compare.html" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
+                                                <li><a href="shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                                <li><a href="#"><i class="icon-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-6">
+                                <div class="product">
+                                    <span class="pr_flash bg-success">Sale</span>
+                                    <div class="product_img">
+                                        <a href="shop-product-detail.html">
+                                            <img src="./style/images/60efdb4fe30e25822bf1b29b_11722.png" alt="product_img7">
+                                        </a>
+                                        <div class="product_action_box">
+                                            <ul class="list_none pr_action_btn">
+                                                <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
+                                                <li><a href="shop-compare.html" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
+                                                <li><a href="shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                                <li><a href="#"><i class="icon-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="product_info">
+                                        <h6 class="product_title"><a href="shop-product-detail.html">white black line dress</a></h6>
+                                        <div class="product_price">
+                                            <span class="price">$68.00</span>
+                                            <del>$99.00</del>
+                                            <div class="on_sale">
+                                                <span>20% Off</span>
+                                            </div>
+                                        </div>
+                                        <div class="rating_wrap">
+                                            <div class="rating">
+                                                <div class="product_rate" style="width:87%"></div>
+                                            </div>
+                                            <span class="rating_num">(25)</span>
+                                        </div>
+                                        <div class="pr_desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                        </div>
+                                        <div class="pr_switch_wrap">
+                                            <div class="product_color_switch">
+                                                <span class="active" data-color="#333333" style="background-color: rgb(51, 51, 51);"></span>
+                                                <span data-color="#7C502F" style="background-color: rgb(124, 80, 47);"></span>
+                                                <span data-color="#2F366C" style="background-color: rgb(47, 54, 108);"></span>
+                                            </div>
+                                        </div>
+                                        <div class="list_product_action_box">
+                                            <ul class="list_none pr_action_btn">
+                                                <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
+                                                <li><a href="shop-compare.html" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
+                                                <li><a href="shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                                <li><a href="#"><i class="icon-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-6">
+                                <div class="product">
+                                    <div class="product_img">
+                                        <a href="shop-product-detail.html">
+                                            <img src="./style/images/60efdb4fe30e25822bf1b29b_11722.png" alt="product_img8">
+                                        </a>
+                                        <div class="product_action_box">
+                                            <ul class="list_none pr_action_btn">
+                                                <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
+                                                <li><a href="shop-compare.html" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
+                                                <li><a href="shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                                <li><a href="#"><i class="icon-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="product_info">
+                                        <h6 class="product_title"><a href="shop-product-detail.html">Men blue jins Shirt</a></h6>
+                                        <div class="product_price">
+                                            <span class="price">$69.00</span>
+                                            <del>$89.00</del>
+                                            <div class="on_sale">
+                                                <span>20% Off</span>
+                                            </div>
+                                        </div>
+                                        <div class="rating_wrap">
+                                            <div class="rating">
+                                                <div class="product_rate" style="width:70%"></div>
+                                            </div>
+                                            <span class="rating_num">(22)</span>
+                                        </div>
+                                        <div class="pr_desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                        </div>
+                                        <div class="pr_switch_wrap">
+                                            <div class="product_color_switch">
+                                                <span class="active" data-color="#333333" style="background-color: rgb(51, 51, 51);"></span>
+                                                <span data-color="#444653" style="background-color: rgb(68, 70, 83);"></span>
+                                                <span data-color="#B9C2DF" style="background-color: rgb(185, 194, 223);"></span>
+                                            </div>
+                                        </div>
+                                        <div class="list_product_action_box">
+                                            <ul class="list_none pr_action_btn">
+                                                <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
+                                                <li><a href="shop-compare.html" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
+                                                <li><a href="shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                                <li><a href="#"><i class="icon-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-6">
+                                <div class="product">
+                                    <div class="product_img">
+                                        <a href="shop-product-detail.html">
+                                            <img src="./style/images/60efdb4fe30e25822bf1b29b_11722.png" alt="product_img9">
+                                        </a>
+                                        <div class="product_action_box">
+                                            <ul class="list_none pr_action_btn">
+                                                <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
+                                                <li><a href="shop-compare.html" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
+                                                <li><a href="shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                                <li><a href="#"><i class="icon-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="product_info">
+                                        <h6 class="product_title"><a href="shop-product-detail.html">T-Shirt Form Girls</a></h6>
+                                        <div class="product_price">
+                                            <span class="price">$45.00</span>
+                                            <del>$55.25</del>
+                                            <div class="on_sale">
+                                                <span>35% Off</span>
+                                            </div>
+                                        </div>
+                                        <div class="rating_wrap">
+                                            <div class="rating">
+                                                <div class="product_rate" style="width:80%"></div>
+                                            </div>
+                                            <span class="rating_num">(21)</span>
+                                        </div>
+                                        <div class="pr_desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                        </div>
+                                        <div class="pr_switch_wrap">
+                                            <div class="product_color_switch">
+                                                <span class="active" data-color="#B5B6BB" style="background-color: rgb(181, 182, 187);"></span>
+                                                <span data-color="#333333" style="background-color: rgb(51, 51, 51);"></span>
+                                                <span data-color="#DA323F" style="background-color: rgb(218, 50, 63);"></span>
+                                            </div>
+                                        </div>
+                                        <div class="list_product_action_box">
+                                            <ul class="list_none pr_action_btn">
+                                                <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
+                                                <li><a href="shop-compare.html" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
+                                                <li><a href="shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                                <li><a href="#"><i class="icon-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <ul class="pagination mt-3 justify-content-center pagination_style1">
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#"><i class="linearicons-arrow-right"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+</body>
+</html>
